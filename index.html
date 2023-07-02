@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoke Genius</title>
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://css.gg/css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <ul class="header__lista">
+                <li><a class="header__login" href="#"><i class="gg-log-in"></i>Login</a></li> 
+                <li ><a href="index.html"><img class="img__header" src="./img/cslogo1.png" alt="Logo Home"></a></li>
+                <div class="header__lista--menu">
+                  <div class="container">  
+                    <li><a class="menu__link" href="#"><i class="gg-menu"></i></a></li> 
+                  </div>
+                    <ul class="menu__lista">
+                        <li class="lista__item"><a href="cadastro.html">Cadastro</a></li>
+                        <li class="lista__item"><a href="upload.html">Upe seu Vídeo</a></li>
+                        <li class="lista__item"><a href="#" id="modal" >Sobre nós</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MODAL -->
+    <dialog>
+        <h2>Sobre nós</h2>
+        
+        <p>Esse modal foi criado com HTML, CSS e Javascript puros.</p>
+
+        <button type="button" id="fechaModal">Fechar</button>
+    </dialog>
+
+    <!-- MODAL  -->
+    
+
+    <section class="banner">
+        <div>
+            <h1>SMOKE GENIUS</h1>
+            <img class="img__banner" src="./img/CT_interrogacao.png" alt="Imagem de um CT em dúvida">
+            <p>Aqui você encontra a Smoke que precisava!</p>
+        </div>
+    </section>
+
+    <section class="section__cartao">
+      <!-- DUST -->
+       <article class="cartao">
+        <div class="cartao__imagem">
+            <img src="./img/dust.jpg" alt="Dust2 Logo">
+        </div>
+
+        <div class="cartao__texto">
+            <a href="#" class="gg-play-button-r"></a>
+            <h2>Aprenda as Smokes na Dust2</h2>
+        </div>
+
+       </article>
+
+      <!-- OVERPASS -->
+       <article class="cartao">
+        <div class="cartao__imagem">
+            <img src="./img/overpass.jpg" alt="Overpass Logo">
+        </div>
+
+        <div class="cartao__texto">
+            <a href="#" class="gg-play-button-r"></a>
+            <h2>Aprenda as Smokes na Overpass</h2>
+        </div>
+
+       </article>
+
+       <!-- INFERNO -->
+
+       <article class="cartao">
+        <div class="cartao__imagem">
+            <img src="./img/inferno.jpg" alt="Inferno Logo">
+        </div>
+
+        <div class="cartao__texto">
+            <a href="#" class="gg-play-button-r"></a>
+            <h2>Aprenda as Smokes na Inferno</h2>
+        </div>
+
+       </article>
+
+       <!-- NUKE -->
+
+       <article class="cartao">
+        <div class="cartao__imagem">
+            <img src="./img/nuke.jpg" alt="Nuke Logo">
+        </div>
+
+        <div class="cartao__texto">
+            <a href="#" class="gg-play-button-r"></a>
+            <h2>Aprenda as Smokes na Nuke</h2>
+        </div>
+
+       </article>
+    </section>
+
+    <footer class="rodape">
+        <p class="rodape__texto">Site desenvolvido com intuito de aplicar técnicas de HMTL, CSS e Javascript</p>
+        <p class="rodape__texto">Foram usados Flexbox e Javascript (para o menu hamburguer)</p>
+        <p class="rodape__texto">@GabrielBertoncellos</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

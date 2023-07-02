@@ -1,0 +1,340 @@
+:root {
+    
+    background: linear-gradient(0deg, rgba(117, 34, 195, 1) 50%, rgb(9, 17, 158) 100%);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+
+}
+body {
+    background: linear-gradient(0deg, rgba(117, 34, 195, 1) 50%, rgb(9, 17, 158) 100%);
+}
+
+
+.header {
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+
+.header__lista {
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+
+
+}
+
+.img__header {
+    width: 80%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    width: 10px;
+}
+
+/* MENU HAMBURGUER */
+.menu__lista {
+    /* background: red; */
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    visibility: hidden;
+    transition: .3s;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.ativo {
+    visibility: visible;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255);
+    opacity: 100;
+}
+
+
+.lista__item {
+    /* background: yellow; */
+    margin: 15px;
+    width: 100%;
+    transition: 1s;
+    text-align: center;
+
+}
+.header__login{
+    display: flex;
+    gap: 1em;
+}
+
+.lista__item a {
+    /* background: blue; */
+    color:rgba(117, 34, 195, 1);
+    cursor: pointer;
+    text-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.493);
+    text-transform: lowercase;
+}
+
+
+/* BANNER */
+
+.banner {
+    /* background: red; */
+    text-align: center;
+}
+
+.banner h1 {
+    letter-spacing: 10px;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px black;
+}
+
+.img__banner {
+    max-width: 640px;
+    padding: 3%;
+}
+
+.banner p {
+    margin-bottom: 20px;
+
+}
+
+/* CARTOES */
+
+.section__cartao {
+    /* background: red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartao {
+    /* background: yellow; */
+    border: 1px solid;
+    width: 300px;
+    max-height: 275px;
+    margin: 10px auto;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.cartao h2 {
+    font-size: 15px;
+}
+
+.cartao__imagem {
+    /* background: purple; */
+    /* height: 80%; */
+    overflow: hidden;
+}
+
+.cartao__imagem img {
+    width: -moz-available;
+}
+
+.cartao__texto {
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.cartao__texto::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    transform: skew(50deg);
+    height: auto;
+    background: rgba(255, 255, 255, 0.47942927170868344);
+    inset: 0;
+    transition: 1s;
+
+
+}
+
+.cartao__texto h2 {
+    z-index: 9;
+}
+
+.cartao__texto:hover::before {
+    width: 100%;
+    background: radial-gradient(circle, rgba(85, 34, 195, 1) 0%, rgba(220, 11, 230, 1) 100%);
+
+}
+
+/* RODAPE */
+
+.rodape {
+    text-align: center;
+    border-top: 1px solid;
+    margin-top: 60px;
+}
+.rodape__texto{
+    padding: 15px;
+}
+
+/* CADASTRO */
+
+.container__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+
+.titulo{
+    margin: 20px;
+    text-transform: uppercase;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    letter-spacing: 10px;
+    
+}
+.formulário {
+    margin-top: 100px;
+    height: 200px;
+}
+
+.formulário div{
+    margin:  20px;
+    
+    
+}
+.glass{
+width: 500px;    
+
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.5px);
+-webkit-backdrop-filter: blur(7.5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+margin: 50px 0;
+}
+.btn__enviar{
+    padding:.8rem 2rem ;
+    border-radius: 10px;
+    box-sizing: content-box;
+    width: auto;
+    color: #fff;
+    border: 2px solid white;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn__enviar:hover{
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.295);
+
+}
+
+/* MODAL */
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-box-shadow: 15px 22px 33px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 22px 33px 3px rgba(0,0,0,0.75);
+    box-shadow: 15px 22px 33px 3px rgba(0,0,0,0.75);
+    animation: anima 1s;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.493);
+    
+}
+
+#fechaModal {
+    background-color: black;
+    color: #fff;
+    width: 5em;
+    height: 2em;
+    margin: 20px 0;
+    cursor: pointer;
+
+}
+
+dialog h2 {
+    font-size: x-large;
+        
+}
+
+dialog p {
+   margin: 2em;
+}
+
+@keyframes anima {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 100%;  
+        transform: translate3d(0, 0px, 0);  
+    }
+}
+
+/* UPLOAD */
+
+.container__up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #fff8;
+    width: 50%;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0,.4) 2px 2px 5px
+}
+.upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+}
+legend {
+    position: relative;
+    top: -10px;
+}
+.up__file{
+    
+    color:#ffffff ;
+    cursor: pointer;
+    transition: all ease-in-out.3s;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.up_submit{
+    background-color: transparent;
+    font-size:1.5rem;
+    border: 1px solid #fff;
+    border-radius: 10% 0;
+}
+
+.up_submit:hover {
+    filter: brightness(.3);
+}

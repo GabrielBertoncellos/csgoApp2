@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoke Genius</title>
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://css.gg/css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <ul class="header__lista">
+                <li><a class="header__login" href="#"><i class="gg-log-in"></i>Login</a></li> 
+                <li ><a href="index.html"><img class="img__header" src="./img/cslogo1.png" alt="Logo Home"></a></li>
+                <div class="header__lista--menu">
+                  <div class="container">  
+                    <li><a class="menu__link" href="#"><i class="gg-menu"></i></a></li> 
+                  </div>
+                    <ul class="menu__lista">
+                        <li class="lista__item"><a href="cadastro.html">Cadastro</a></li>
+                        <li class="lista__item"><a href="upload.html">Upe seu Vídeo</a></li>
+                        <li class="lista__item"><a href="#" id="modal" >Sobre nós</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MODAL -->
+    <dialog>
+        <h2>Sobre nós</h2>
+        
+        <p>Esse modal foi criado com HTML, CSS e Javascript puros.</p>
+
+        <button type="button" id="fechaModal">Fechar</button>
+    </dialog>
+
+    <form class="upload">
+        <fieldset class="container__up">
+            <legend>Faça o upload do seu vídeo</legend>
+            <input class="up__file" type="file" name="video" id="video" required>
+            <input class="up_submit" type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <!-- MODAL  -->
+<script src="main.js"></script>
+</body>
+</html>
